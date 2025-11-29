@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E302 Konveksi - Jasa Pembuatan Kaos, Kemeja, dan Seragam Berkualitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281313555151" target="_blank" class="whatsapp-float bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tshirt text-purple-600 text-2xl"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">E302 Konveksi</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition">Beranda</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition">Tentang</a>
+                    <a href="#services" class="text-gray-600 hover:text-purple-600 transition">Layanan</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-purple-600 transition">Portofolio</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition">Kontak</a>
+                </div>
+                <button class="md:hidden text-gray-600" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-purple-600">Beranda</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-purple-600">Tentang</a>
+                <a href="#services" class="block py-2 text-gray-600 hover:text-purple-600">Layanan</a>
+                <a href="#portfolio" class="block py-2 text-gray-600 hover:text-purple-600">Portofolio</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-purple-600">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-4">Konveksi Terpercaya untuk Kebutuhan Anda</h3>
+                    <p class="text-xl mb-8 opacity-90">Melayani pembuatan kaos, kemeja, seragam, dan berbagai jenis pakaian dengan kualitas terbaik dan harga terjangkau.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/6281313555151" target="_blank" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp"></i>
+                            Pesan via WhatsApp
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition text-center">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://miro.medium.com/v2/1*V-iwcOykoaDzV5jmn6o7XQ.jpeg" alt="Konveksi" class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 p-4 rounded-lg shadow-lg">
+                        <p class="font-bold text-lg">1073+</p>
+                        <p class="text-sm">Pelanggan Bersama Kami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">E302 Konveksi</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami adalah konveksi profesional yang telah berpengalaman selama bertahun-tahun dalam melayani berbagai kebutuhan pakaian.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kualitas Terjamin</h3>
+                    <p class="text-gray-600">Kita adalah konveksi yang sangat tepat untuk anda yang mencari kualitas bahan yang baik dan ramah dikantong.. bisa sesuai pesanan bahan yang anda inginkan.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Tepat Waktu</h3>
+                    <p class="text-gray-600">Komitmen untuk menyelesaikan pesanan sesuai dengan waktu yang disepakati.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-dollar-sign text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Harga Kompetitif</h3>
+                    <p class="text-gray-600">Menawarkan harga terbaik dengan kualitas yang tidak mengecewakan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami melayani berbagai jenis pembuatan pakaian sesuai kebutuhan Anda.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://img.lazcdn.com/g/p/b30207729bd2e9066647ff228a2b1e16.jpg_960x960q80.jpg_.webp" alt="Kaos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kaos / Tshirt</h3>
+                        <p class="text-gray-600 mb-4"> Dengan menggunakan mesin yang kumplit dengan kualitas yang diperhatikan, kami menjaga bagaimana kerapihan benang dan presisi dari ukuran kaos yang di order oleh custemer.
+                        Dengan Custom berbagai model dan ukuran, Percayakan pada kami pesanan anda..</p>
+                        <a href="https://wa.me/6281313555151" target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">Pesan Sekarang →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://www.konveksi-indonesia.com/image-upload/konveksi-kemeja-konveksi-kemeja-di-jakarta-konveksi-kemeja-kantor-konveksi-kemeja-seragam-konveksi-kemeja-tactical-konveksi-kemeja-lapangan-konvek.jpg" alt="Kemeja" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kemeja</h3>
+                        <p class="text-gray-600 mb-4"> Hadirkan gaya profesional dan kenyamanan maksimal dalam aktivitas harian Anda. Bahan premium pilihan Didesain dengan cutting modern dan jahitan presisi, kemeja ini siap menunjang performa Anda, baik di kantor maupun acara kasual.
+                        
+                        Kemeja kantor, kemeja outdoor, kemeja sekolah, kemeja batik, kemeja casual dengan desain custom.</p>
+                        <a href="https://wa.me/6281313555151" target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">Pesan Sekarang →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://www.konveksiwijaya.com/wp-content/uploads/2024/01/retouch_2024010111365282-848x400.jpg" alt="Seragam" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Seragam</h3>
+                        <p class="text-gray-600 mb-4"> Kami menggunakan bahan-bahan pilihan terbaik yang nyaman dipakai sepanjang hari, tahan lama, dan mudah dirawat. Pilihan bahan kami meliputi katun combed berkualitas, Polyster premium, dan bahan lain yang dapat disesuaikan dengan anggaran dan kebutuhan spesifik seragam Anda.
+                        
+                        
+                        Seragam sekolah, Seragam kantor, komunitas dengan bordir atau sablon.</p>
+                        <a href="https://wa.me/6281313555151" target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">Pesan Sekarang →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://windofaapparel.com/asset/images/article/83881-article-solusi-sablon-hoodie-kualitas-premium-dengan-teknologi-sablon-digital.jpg" alt="Jaket" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Jaket / Hoodie</h3>
+                        <p class="text-gray-600 mb-4"> pembuatan hoodie/jaket/sweater/bommber custom untuk kebutuhan seragam atau acara Anda. Dengan pengalaman bertahun-tahun di bidang konveksi, kami memastikan setiap yang dibuat dari bahan berkualitas tinggi yang nyaman dipakai seharian.
+                        
+                        Jaket hoodie, jaket varsity, jaket bomber dengan berbagai bahan.</p>
+                        <a href="https://wa.me/6281313555151" target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">Pesan Sekarang →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Portofolio Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Beberapa hasil karya terbaik dari pelanggan kami.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://atmawidiaksa.co.id/wp-content/uploads/2025/06/1-Seragam-Sekolah-Custom.webp" alt="Portofolio 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Seragam Sekolah</p>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://windofaapparel.com/asset/images/article/17376-article-variasi-teknik-sablon-kaos-dalam-dunia-konveksi.jpg" alt="Portofolio 2" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Kaos Event</p>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://www.konveksina.com/wp-content/uploads/2023/08/Kemeja-Seragam-Kantor.jpg" alt="Portofolio 3" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Kemeja </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Pelanggan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari pelanggan yang telah menggunakan jasa kami.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/seed/user1/50/50" alt="User 1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Budi Herianto</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Pelayanan sangat memuaskan, hasilnya bagus dan tepat waktu. Recommended!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/seed/user2/50/50" alt="User 2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Riani</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Kualitas jahitan rapi, bahan nyaman dipakai. Harga juga terjangkau."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/seed/user3/50/50" alt="User 3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ahmad Fauzi</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sudah beberapa kali pesan di sini, selalu puas dengan hasilnya."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pertanyaan Umum</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Jawaban untuk pertanyaan yang sering diajukan.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <button class="w-full p-6 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFAQ(1)">
+                        <h3 class="font-semibold">Berapa minimum order untuk pembuatan pakaian?</h3>
+                        <i class="fas fa-chevron-down transition-transform" id="faq-icon-1"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6" id="faq-content-1">
+                        <p class="text-gray-600">Minimum order untuk pembuatan pakaian adalah 24 pcs per model. Namun untuk beberapa produk tertentu bisa kurang dari minimum tersebut.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <button class="w-full p-6 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFAQ(2)">
+                        <h3 class="font-semibold">Berapa lama waktu pengerjaan?</h3>
+                        <i class="fas fa-chevron-down transition-transform" id="faq-icon-2"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6" id="faq-content-2">
+                        <p class="text-gray-600">Waktu pengerjaan tergantung dari jumlah pesanan dan tingkat kesulitan. Rata-rata 7-14 hari kerja setelah desain disetujui.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <button class="w-full p-6 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFAQ(3)">
+                        <h3 class="font-semibold">Apakah menerima desain custom?</h3>
+                        <i class="fas fa-chevron-down transition-transform" id="faq-icon-3"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6" id="faq-content-3">
+                        <p class="text-gray-600">Ya, kami menerima desain custom sesuai dengan keinginan Anda. Tim kami akan membantu mewujudkan desain Anda menjadi produk yang berkualitas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Siap melayani kebutuhan konveksi Anda. Hubungi kami sekarang juga!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6">Informasi Kontak</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-purple-600 text-xl w-8"></i>
+                            <span class="text-gray-700">0813-1355-5151</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
+                            <span class="text-gray-700">0813-1355-5151</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-purple-600 text-xl w-8"></i>
+                            <span class="text-gray-700">info@e302konveksi.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-purple-600 text-xl w-8"></i>
+                            <span class="text-gray-700">Perum Bukit Arjasari Indah, Blok E3, Kab. Bandung</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Jam Operasional</h4>
+                        <p class="text-gray-600">Senin - Sabtu: 08.00 - 17.00</p>
+                        <p class="text-gray-600">Minggu: Tutup</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6">Kirim Pesan</h3>
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Nama Lengkap</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-600" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Nomor WhatsApp</label>
+                            <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-600" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Pesan</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-600" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-tshirt text-2xl"></i>
+                        <h3 class="text-xl font-bold">E302 Konveksi</h3>
+                    </div>
+                    <p class="text-gray-400">Konveksi terpercaya untuk semua kebutuhan pakaian Anda.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Pembuatan Kaos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pembuatan Kemeja</a></li>
+                        <li><a href="#" class="hover:text-white transition">Seragam Sekolah</a></li>
+                        <li><a href="#" class="hover:text-white transition">Seragam Kantor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition">Portofolio</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 205 E302 Konveksi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // FAQ toggle
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = event.target[0].value;
+            const phone = event.target[1].value;
+            const message = event.target[2].value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Halo E302 Konveksi, saya ${name} (${phone}) ingin memesan: ${message}`;
+            const whatsappURL = `https://wa.me/6281313555151?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Reset form
+            event.target.reset();
+            
+            // Show success message
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk melanjutkan pemesanan.');
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
